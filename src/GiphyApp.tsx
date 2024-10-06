@@ -11,7 +11,7 @@ export const GiphyApp: FC = () => {
 
       <div className="flex items-center mb-4">
         <img src={giphy} alt="Giphy Logo" className="h-8 mr-2" />
-        <h1 className="text-4xl text-white font-bold">GIPHY Finder App</h1>
+        <h1 className="text-4xl text-white font-bold">GIPHY App</h1>
       </div>
 
       <AddCategory setCategories={setCategories} />
