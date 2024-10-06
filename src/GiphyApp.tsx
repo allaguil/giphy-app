@@ -2,17 +2,18 @@ import { FC, useState } from 'react';
 import { AddCategory } from './components/AddCategory';
 import giphy from '../public/giphy.svg'
 
-export const GiphyFinderApp: FC = () => {
+export const GiphyApp: FC = () => {
 
-  const [categories, setCategories] = useState<string[]>(['DBZ']);
+  const [ categories, setCategories ] = useState<string[]>( ['DBZ'] );
 
   return (
     <div className="flex flex-col p-[60px]">
 
       <div className="flex items-center mb-4">
         <img src={giphy} alt="Giphy Logo" className="h-8 mr-2" />
-        <h1 className="text-4xl text-white">Giphy Finder App</h1>
+        <h1 className="text-4xl text-white font-bold">GIPHY Finder App</h1>
       </div>
+
       <AddCategory setCategories={setCategories} />
 
       <hr className="my-4 border-gray-600" />
